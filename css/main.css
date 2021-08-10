@@ -99,6 +99,7 @@ p{
     width: 100vw;
     visibility: hidden;
     transform-origin: top;
+    z-index: 3;
 }
 
 @media (max-width: 820px){
@@ -124,9 +125,11 @@ p{
     justify-content: space-between;
     padding: 2rem 0;
 }
+
 .navbar{
     background: var(--clr-primary-100) !important;
 }
+
 .navbar.change{
     background: var(--clr-primary-100) !important;
     transition: all 0.5s ease-in-out;
@@ -794,9 +797,5 @@ p{
 
 .split-subs .mycard{
     width: 600px;
-}
-
-#yearly{
-    transition: 0.6s ease;
 }
 
