@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items:1,
@@ -22,14 +24,15 @@ $(document).ready(function(){
     });
 
     // subscription scripts
-
+    $("#yearly").hide();
     $('#month-show').click(function(){
-        $('#monthly').show("slow");
-        $('#yearly').fadeOut(5000);
+        $("#monthly").show();
+        $("#yearly").hide();
+        
     });
 
     $('#year-show').click(function(){
-        $('#yearly').show("slow");
-        $('#monthly').hide("slow");
+       $("#yearly").show();
+       $("#monthly").hide("slow");
     });
-})
+});
