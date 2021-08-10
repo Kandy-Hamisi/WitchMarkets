@@ -20,4 +20,16 @@ $(document).ready(function(){
             $(".header").removeClass('show');
         }
     });
+
+    // subscription scripts
+
+    $('#month-show').click(function(){
+        $('#monthly').show("slow");
+        $('#yearly').fadeOut(5000);
+    });
+
+    $('#year-show').click(function(){
+        $('#yearly').show("slow");
+        $('#monthly').hide("slow");
+    });
 })
