@@ -33,6 +33,6 @@ $(document).ready(function(){
 
     $('#year-show').click(function(){
        $("#yearly").show();
-       $("#monthly").hide("slow");
+       $("#monthly").hide();
     });
 });

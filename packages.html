@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="icofont/icofont.min.css">
 
-    <title>Document</title>
+    <title>Pricing</title>
     <style>
         .header{
             visibility: visible!important;
@@ -90,6 +90,9 @@
                                 <li><span class="icofont-tick-boxed"></span>VIP analysis group</li>
                             </ul>
                         </div>
+                        <div class="buy-btn">
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Buy Package</button>
+                        </div>
                     </div>
                 </div>
                 <div class="mycard">
@@ -105,10 +108,13 @@
                                 <li><span class="icofont-tick-boxed"></span>Mentorship</li>
                             </ul>
                         </div>
+                        <div class="buy-btn">
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Buy Package</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="split-subs" id="yearly" data-aos="fade-right">
+            <div class="split-subs" id="yearly">
                 <div class="mycard">
                     <div class="card-heading">
                         <h3 class="title">Basic</h3>
@@ -120,6 +126,9 @@
                                 <li><span class="icofont-tick-boxed"></span>VIP signals group</li>
                                 <li><span class="icofont-tick-boxed"></span>VIP analysis group</li>
                             </ul>
+                        </div>
+                        <div class="buy-btn">
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Buy Package</button>
                         </div>
                     </div>
                 </div>
@@ -136,10 +145,79 @@
                                 <li><span class="icofont-tick-boxed"></span>Mentorship</li>
                             </ul>
                         </div>
+                        <div class="buy-btn">
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Buy Package</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- recomended payments and brokers -->
+    <section class="recommendation-section" id="payments">
+        <div class="container">
+            <header class="header-intro intro">
+                <h1 class="recommendation-title title">Recommended Payments</h1>
+                <div class="horizontal-line">
+                    <hr>
+                </div>
+            </header>
+
+            <article class="split-payments">
+                <div class="mpesa">
+                    <img src="images/mpesa-logo.svg" alt="">
+                </div>
+                <div class="skrill">
+                    <img src="images/skrill.svg" alt="">
+                </div>
+                <div class="paypal">
+                    <img src="images/PayPal-logo.png" alt="">
+                </div>
+                <div class="neteller">
+                    <img src="images/neteller.svg" alt="">
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- how to pay section -->
+    <section class="payment-info-section">
+        <div class="container">
+            <div class="payment-intro intro">
+                <h1 class="title">How To Make Payments</h1>
+                <div class="horizontal-line">
+                    <hr>
+                </div>
+            </div>
+            <div class="payment-info-content">
+                <p>Payments through Skrill, Neteller and Paypal are done to our email <em><b>pay.thewitchmarkets@gmail.com</b></em></p>
+                <p>After making the payment, fill in the following form and click submit.</p>
+                <div class="payment-form">
+                    <form action="" class="form" role="form">
+                        <div class="transaction-details">
+                            <div class="form-group first-child">
+                                <label for="email">Email paid with (required)</label>
+                                <input type="email" name="" id="email" placeholder="example@gmail.com" class="form-control" required>
+                            </div>
+                            <div class="form-group second-child">
+                                <label for="tid">TransactionID (required)</label>
+                                <input type="text" name="" id="tid" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="send" value="Submit" id="" class="btn btn-secondary">
+                        </div>
+                    </form>
+                </div>
+                <p>After clicking "Submit" we will get back to you in 10 Minutes</p>
+                <p>You can also senf the transaction screenshot Direct to our Telegram DM:</p>
+                <a href="https://t.me/thewitchmarkets" target="_blank" class="btn btn-secondary">Send to Our DM</a>
+            </div>
+            
+        </div>
+        
     </section>
 
     <!-- footer section -->
@@ -216,8 +294,51 @@
             </div>
         </footer>
     </section>
+    
 
-
+    <section class="my-modal-section">
+        <!-- Button trigger modal -->
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <!-- <div class="modal-content">
+                <button type="button close-btn" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="split-modal">
+                        <div class="img-modal">
+                            
+                        </div>
+                        <div class="pricing-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione voluptatem recusandae asperiores vel ut pariatur facere quaerat, perspiciatis dicta!
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div> -->
+            <div class="modal-content">
+                <div class="split-modal">
+                    <div class="title-area">
+                        <h4 class="title">Pick a payment method</h4>
+                    </div>
+                    <div class="payment-method-lists">
+                        <ul>
+                            <li><a href="https://www.paypal.com" target="_blank">Paypal</a></li>
+                            <li><a href="https://www.skrill.com" target="_blank">Skrill</a></li>
+                            <li><a href="https://www.neteller.com" target="_blank">Neteller</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 <script>
     AOS.init();
 </script>
