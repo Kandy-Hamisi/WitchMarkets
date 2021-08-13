@@ -511,6 +511,13 @@ p{
     height: 50px;
 }
 
+@media (max-width: 820px){
+    .split-payments{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5rem;
+    }
+}
+
 /* contact us section */
 
 .contact-us-section{
